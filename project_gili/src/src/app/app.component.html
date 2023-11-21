@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" Style="background-color: rgb(30, 29, 29);position: fixed;top: 0; width: 100%;direction: rtl;height: 15%;">
+  <div class="collapse navbar-collapse" [ngStyle]="{'padding-top':'40px'}">
+      <ul class="navbar-nav mr-auto" >
+        <li class="nav-item active" routerLink="/home" routerLinkActive="active" [ngStyle]="{'padding-top':'40px'}">
+            <a class="nav-link"  >דף הבית</a>
+          </li>
+        <li class="nav-item" routerLink="/aboute" routerLinkActive="active" [ngStyle]="{'padding-top':'40px'}">
+          <a class="nav-link" >אודות</a>
+        </li>
+        <li class="nav-item" routerLink="/galery" routerLinkActive="active" [ngStyle]="{'padding-top':'40px'}">
+          <a class="nav-link" >  גלריה</a>
+        </li>
+        <li class="nav-item" routerLink="/service" routerLinkActive="active" [ngStyle]="{'padding-top':'40px'}">
+          <a class="nav-link" >שרותים שלי!</a>
+        </li>
+        <li class="nav-item" routerLink="/contact" routerLinkActive="active" [ngStyle]="{'padding-top':'40px'}">
+          <a class="nav-link" > !יצירת קשר</a>
+        </li>
+       
+        <li class="nav-item" routerLink="/reply" routerLinkActive="active" [ngStyle]="{'padding-top':'40px'}">
+          <a class="nav-link" >  תגובות</a>
+        </li>
+
+        <h1 class="nav-link" [ngStyle]="{'padding-top':'50px'}">{{ser.getSubject().value}}</h1>
+        <img src="assets/image/gift.gif" [ngStyle]="{'width':'15%','direction':'rtl','height':'120px','padding-top':'60px','padding-rigth':'10px'}">  
+          <!-- <a class="nav-link" >{{userser}}</a> -->
+          <!-- <h1 class="nav-link">{{ser.getSubject().value}}</h1> -->
+        <h1 [ngStyle]="{'color':'white','padding-left':'530px','padding-top':'40px'}"> {{title|date : 'dd-MM-yyyy'}}</h1>
+       
+        <img src="assets/image/לוגו.png" [ngStyle]="{'width':'200px','direction':'rtl','padding-top':'40px'}">  
+      </ul>    
+    </div>
+  </nav>
+<router-outlet></router-outlet>
+
+<!-- <app-list-song></app-list-song> -->

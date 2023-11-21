@@ -1,0 +1,19 @@
+
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()" style="text-align: center">
+    <label for="name" Style="color:pink"> Name: </label>
+    <input id="name" type="text" formControlName="Name"  placeholder="your name:">
+    <label for="Email" Style="color:pink"> Email: </label>
+    <input id="Email" type="text" formControlName="Email"  placeholder="you@example.com">
+    <label for="phone" Style="color:pink"> phone: </label>
+    <input id="phone" type="text" formControlName="phone" placeholder="your phone">
+    <label for="BodyReply" Style="color:pink"> BodyReply: </label>
+    <input id="BodyReply" type="text" formControlName="BodyReply" placeholder="???????????">
+  
+  
+    <p>Complete the form to enable button.</p>
+    <button type="submit" [disabled]="!profileForm.valid" style="color: pink;background-color: white;border: solid 3px darkgray;border-radius: 10px">Submit</button>
+  </form>
+  
+  
+
+  

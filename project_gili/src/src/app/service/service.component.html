@@ -1,0 +1,10 @@
+  
+  <div style="margin-top: 150px;text-align: center;" *ngFor ="let item of modernes "> 
+       <h1 style="color: pink;">{{item.Typeservice }}</h1>
+       <p >{{item.Details}}</p>
+       <button routerLink="/service/privatehoe/{{item.Typeservice}}" routerLinkActive="active">More details</button>
+       <!-- <button   type="button" value="modern"  (click)="cmodern(item)" style="color: pink;">לפרטים נוספים לחץ כאן</button> -->
+    </div>
+      
+
+    <router-outlet></router-outlet>

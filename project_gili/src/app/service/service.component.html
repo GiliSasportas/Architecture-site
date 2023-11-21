@@ -1,0 +1,10 @@
+  
+  <div style="margin-top: 150px;text-align: center;" *ngFor ="let item of modernes "> 
+       <h1 style="color: pink;">{{item.Typeservice }}</h1>
+       <p >{{item.Details}}</p>
+       <button (click)="openDetails(item)">More details</button>
+       
+    </div>
+      
+
+    <router-outlet></router-outlet>

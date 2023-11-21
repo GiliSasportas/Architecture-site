@@ -1,0 +1,12 @@
+
+<div *ngFor="let item of replies"> 
+    <app-show-reply [reply]="item"></app-show-reply>
+</div>
+
+
+
+<input type="button" value="הוסף תגובה" (click)="addreply=true" style="text-align:center;margin-top:200px;">
+<div *ngIf="addreply">
+    <app-add-reply></app-add-reply>
+</div>
+

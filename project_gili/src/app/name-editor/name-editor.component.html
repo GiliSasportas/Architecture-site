@@ -1,0 +1,9 @@
+<div style="text-align: center">
+    <label for="name" Style="color:pink">Name: </label>
+    <input id="name" type="text" [formControl]="name" placeholder="your name:">
+
+    <p>Value: {{ name.value }}</p>
+
+    <button type="button" (click)="updateName()">Update Name</button>
+</div>
+
